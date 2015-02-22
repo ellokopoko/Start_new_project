@@ -1,0 +1,29 @@
+.content.row
+  .col-lg-12
+    %header.clearfix
+      %section#branding
+        %a{href: "index.php"}
+          %img{src: "images/misc/ralogo_monogram.png", alt: "Logo for Roux Conference"}
+      .navbar.navbar-default
+        .container-fluid
+          %ul.nav.navbar-nav.navbar-right
+            - pages = ["Home", "Venue/Travel", "Schedule", "Artists", "Register"]
+            - artists = ["Barot Bellingham", "Gerard Donahue", "Jonathan Ferrar", "Lorenzo Garcia", "Hillary Goldwynn", "Hassum Harrod", "Jennifer Jerome", "LaVonne LaRue", "Riley Rewington", "Constance Smith", "Xhou Ta", "Richard Tweed"]
+            - for name in pages
+              - if name == "Artists"
+
+                %li{class: "dropdown"} 
+                  %a{href: "#", class: "dropdown-toggle", "data-toggle": "dropdown"} = name
+                    %b{class: "caret"}
+                  %ul{class: "dropdown-menu", rol: "menu", "aria-labelledby": "dropdownMenu"}
+                    %li
+                      %a{href: "artists.php", tabindex: "-1"} All artists
+                    %li.divider
+                    - for name in artists
+                      %li
+                        %a{href: "artists.php##{name}", tabindex: "-1"} =name
+
+              - else
+                %li
+                  %a{href: "#"} = name
+                

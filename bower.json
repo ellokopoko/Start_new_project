@@ -1,0 +1,22 @@
+{
+  "name": "first-project-whith-bower",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ellokopoko/Start_new_project",
+  "authors": [
+    "Talalaev Michiel <ja-morning@yandex.ua>"
+  ],
+  "description": "begin to use bower",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "~1.11.2",
+    "bootstrap": "~3.3.2"
+  }
+}
