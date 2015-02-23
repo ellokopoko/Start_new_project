@@ -150,11 +150,11 @@ module.exports = function(grunt) {
                     "bower_components/bootstrap/less/*.less", 
                     "_/components/styles/working/*.less"
                    ],
-            tasks: ['sass', 'less', 'bower_concat', 'concat:dev_css', 'cssmin']
+            tasks: ['sass', 'less', 'bower_concat', 'concat:dev_css']
         },
         scripts: {
             files: "_/components/javascripts/working/*.coffee",
-			tasks: ['coffee', 'concat:dev_js', 'uglify']
+			tasks: ['coffee', 'concat:dev_js']
         }
 	}
   });

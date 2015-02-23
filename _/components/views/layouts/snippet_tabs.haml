@@ -1,0 +1,17 @@
+- items = [
+  - {title: 'what’s hot?', id: 'whats_hot'}, 
+  - {title: 'designers', id: 'designers'}, 
+  - {title: 'featured', id: 'featured'}, 
+  - {title: 'latest', id: 'latest'}]
+
+.tabbable.tabs
+  %ul{class: "nav nav-tabs", id: "look_myTab"}
+    - for item in items
+      %li{class: "#{if item.id == 'whats_hot' then 'active' else ''}"}
+        %a{href: "##{item.id}", "data-toggle": "tab"}
+          = item.title.toUpperCase()
+        
+  .tab-content
+    - for item in items
+      %div{id: "#{item.id}", class: "tab-pane #{if item.id == 'whats_hot' then 'active' else ''}"}
+        <?php include "_/views/layouts/snippet_items_#{item.id}.php" ?>

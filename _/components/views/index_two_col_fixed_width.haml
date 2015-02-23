@@ -6,13 +6,17 @@
     %link{href: "_/styles/style.min.css", rel: "stylesheet", type: "text/css"}
     %script{src: "_/javascripts/main.min.js", type: "text/javascript"}
   %body{id: "home"}
-    %section.container-fluid 
+    %section.container 
       .content.row
         
         #project_name_header
           <?php include "_/views/layouts/header.php"; ?>
-        <!--- Header ------------------------->
+        <!--- Project Name Header ----------------------->
+        
+        %section.main.col.col-lg-8
+          Main content
+        %section.sidebar.col.col-lg-4
+          Sidebar
         
         #project_name_footer
           <?php include "_/views/layouts/footer.php"; ?>
-        <!--- Footer Links ------------------->

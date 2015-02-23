@@ -1,0 +1,39 @@
+<!--- Slider ---------------------->
+%div(id="PROJECT_NAME_carousel" class="carousel slide" data-ride="carousel")
+
+  <!-- Indicators -->
+  %ol.carousel-indicators
+    %li(data-target="#PROJECT_NAME_carousel" data-slide-to="0" class="active")
+    %li(data-target="#PROJECT_NAME_carousel" data-slide-to="1")
+  <!-- Indicators -->
+        
+  <!-- Wrapper for slides -->
+  .carousel-inner
+    .item.active
+      %img{:src => "", :alt => ""}
+      <!--- Text --->
+      .carousel-caption
+      
+      <!--- Text --->
+      
+        
+    .item
+      %img{:src => "images/slides/slide_01.png", :alt => ""}
+        <!--- Text --->
+        .carousel-caption
+        
+        <!--- Text --->
+        
+  <!-- Wrapper for slides -->
+          
+      
+  <!-- Controls -->
+  %a(class="left carousel-control" href="#PROJECT_NAME_carousel" data-slide="prev")
+    %div
+      %span.look_arrow_left
+  %a(class="right carousel-control" href="#PROJECT_NAME_carousel" data-slide="next")
+    %div
+      %span.look_arrow_right
+  <!-- Controls -->
+        
+<!--- Slider ---------------------->
