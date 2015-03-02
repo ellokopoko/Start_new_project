@@ -25,7 +25,8 @@ module.exports = function(grunt) {
         },
 	    prod_css: {
 	        src: ['_/components/styles/_bower.css', 
-				  'bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css',
+				  'bower_components/jquery-ui/themes/smoothness/theme.css',
+				  'bower_components/jquery-ui/themes/smoothness/jquery-ui.css',
                   '_/components/styles/less.css',
                   '_/components/styles/sass.css' // JQuery UI '_/components/styles/jquery-ui.css'
                  ],
@@ -40,7 +41,8 @@ module.exports = function(grunt) {
         }, 
         dev_css: {
             src: ['_/components/styles/_bower.css',
-				  '_/components/styles/jquery-ui.css',
+				  'bower_components/jquery-ui/themes/smoothness/theme.css',
+				  'bower_components/jquery-ui/themes/smoothness/jquery-ui.css',
                   '_/components/styles/less.css',
                   '_/components/styles/sass.css' // JQuery UI '_/components/styles/jquery-ui.css'
                  ],
